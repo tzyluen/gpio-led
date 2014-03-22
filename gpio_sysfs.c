@@ -9,6 +9,9 @@
 #include "gpio_sysfs.h"
 
 
+/**
+ * blinks GPIO 4 (P1-07) while reading GPIO 24 (P1-18)
+ */
 int main(int argc, char **argv)
 {
     int repeat = 10;

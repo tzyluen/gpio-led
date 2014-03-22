@@ -15,16 +15,28 @@
 int main(int argc, char **argv)
 {
     setup_gpio();  /* Set up gpio pointer for direct register access */
-    INP_GPIO(7); /* use INP_GPIO(x) before we can use OUT_GPIO(x) */
-    OUT_GPIO(7); /* set GPIO pin 7 as output */
 
-    /* flash LED on and off 10 times */
-    int i;  /* repeat count */
-    for (i = 0; i < 10; ++i) {
-        GPIO_SET = (1 << 7);
+    int p[] = {11, 12, 13, 15, 16, 18, 22, 7};
+    // P1: 12 <-> 18 ?
+    // P3: 15
+    
+    int i;
+    for (i = 0; i < sizeof(p); ++i) {
+        printf("setting: pin %d\n", p[i]);
+        INP_GPIO(p[i]); /* use INP_GPIO(x) before we can use OUT_GPIO(x) */
+        OUT_GPIO(p[i]); /* set GPIO pin 7 as output */
+        GPIO_SET = (1 << p[i]);
         sleep(1);
-        GPIO_CLR = (1 << 7);
-        sleep(1);
+        GPIO_CLR = (1 << p[i]);
+
+       // /* flash LED on and off 10 times */
+       // int i;  /* repeat count */
+       // for (i = 0; i < 10; ++i) {
+       //     GPIO_SET = (1 << p);
+       //     sleep(1);
+       //     GPIO_CLR = (1 << p);
+       //     sleep(1);
+       // }
     }
 
     return EXIT_SUCCESS;

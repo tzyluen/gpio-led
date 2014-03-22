@@ -33,8 +33,8 @@ for k, p in out_pins_map.iteritems():
     GPIO.setup(p, GPIO.OUT)
     blink(p);
 
-set_all()
-time.sleep(3)
-unset_all()
+#set_all()
+#time.sleep(3)
+#unset_all()
 
 GPIO.cleanup()
