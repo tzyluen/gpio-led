@@ -6,11 +6,11 @@ Raspberry Pi’s GPIO, a simple LED controller.  Reference to <cite>[Pi's GPIO p
 Demo
 ----
 GPIO wiring:
-![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-1.jpeg)
+![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-3.jpeg)
 
 Single LED blinks:                                                             | Eight LEDs blink:
 :-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:
-![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-2.jpeg) | ![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-3.jpeg)
+![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-1.jpeg) | ![alt tag](https://raw.github.com/tzyluen/gpio-led/master/img/gpio-led-2.jpeg)
 
 
 Notes
