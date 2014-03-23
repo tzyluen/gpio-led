@@ -1,6 +1,6 @@
-gpio-led - Raspberry Pi’s GPIO, a simple LED controller
+gpio-led
 =======================================================
-Reference to <cite>[Pi's GPIO pins][1]</cite>
+Raspberry Pi’s GPIO, a simple LED controller.  Reference to <cite>[Pi's GPIO pins][1]</cite>
 
 
 Demo
